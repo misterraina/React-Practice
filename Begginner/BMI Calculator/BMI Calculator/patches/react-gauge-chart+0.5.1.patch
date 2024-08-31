@@ -1,0 +1,14 @@
+diff --git a/node_modules/react-gauge-chart/dist/GaugeChart/customHooks.js b/node_modules/react-gauge-chart/dist/GaugeChart/customHooks.js
+index d0b29d2..d6cacee 100644
+--- a/node_modules/react-gauge-chart/dist/GaugeChart/customHooks.js
++++ b/node_modules/react-gauge-chart/dist/GaugeChart/customHooks.js
+@@ -5,7 +5,8 @@ Object.defineProperty(exports, "__esModule", {
+ });
+ exports.default = void 0;
+ 
+-var _isEqual = _interopRequireDefault(require("lodash/isEqual"));
++import isEqual from "lodash/isEqual";
++
+ 
+ var _react = require("react");
+ 
