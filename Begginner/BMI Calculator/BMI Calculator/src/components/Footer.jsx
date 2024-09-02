@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
-    <div className="bg-lightest-dark dark:bg-customPurple text-black flex dark:text-white p-6 font-raleway">
+    <div id='footer' className="bg-lightest-dark dark:bg-customPurple text-black flex dark:text-white p-6 font-raleway">
       <div className="container mx-auto text-center">
         {/* <p className="mb-4">© 2024 My Website</p> */}
         <div className="flex justify-center space-x-6 mb-4">

@@ -11,10 +11,10 @@ const data = [
   { name: 'Obesity Class 2', value: 39.9 - 34.9, color: '#ff6666' },
 ];
 
-const cx = 300; // Center x-coordinate
-const cy = 250; // Center y-coordinate, adjust as needed
-const iR = 100; // Inner radius
-const oR = 200; // Outer radius
+const cx = 250; // Center x-coordinate
+const cy = 200; // Center y-coordinate, adjust as needed
+const iR = 80; // Inner radius
+const oR = 150; // Outer radius
 
 const needle = (value, data, cx, cy, iR, oR, color) => {
   let total = 0;
@@ -25,7 +25,7 @@ const needle = (value, data, cx, cy, iR, oR, color) => {
   const length = (iR + 2 * oR) / 3;
   const sin = Math.sin(-RADIAN * ang);
   const cos = Math.cos(-RADIAN * ang);
-  const r = 7;
+  const r = 5;
   const x0 = cx;
   const y0 = cy;
   const xba = x0 + r * sin;
@@ -61,7 +61,7 @@ export default class BMIGauge extends PureComponent {
 
     return (
       <div className='flex items-center justify-center h-full font-nunito font-bold'>
-        <PieChart width={600} height={300} className="h-auto"> {/* Reduced height */}
+        <PieChart width={500} height={240} className="h-auto"> {/* Reduced height */}
           <Pie
             dataKey="value"
             startAngle={180}
