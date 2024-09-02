@@ -2,11 +2,11 @@ import React, { PureComponent } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 
 const data = [
-  { name: 'Underweight', value: 18.5, color: '#ff9999' },
-  { name: 'Normal weight', value: 24.9 - 18.5, color: '#99ff99' },
-  { name: 'Overweight', value: 29.9 - 24.9, color: '#ffcc99' },
-  { name: 'Obesity Class 1', value: 34.9 - 29.9, color: '#ff9933' },
-  { name: 'Obesity Class 2', value: 39.9 - 34.9, color: '#ff6666' },
+  { name: 'UW', value: 18.5, color: '#ff9999' },
+  { name: 'NW', value: 24.9 - 18.5, color: '#99ff99' },
+  { name: 'OW', value: 29.9 - 24.9, color: '#ffcc99' },
+  { name: 'OW Class1', value: 34.9 - 29.9, color: '#ff9933' },
+  { name: 'OW Class2', value: 39.9 - 34.9, color: '#ff6666' },
 ];
 
 const cx = 250;
