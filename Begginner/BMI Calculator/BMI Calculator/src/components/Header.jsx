@@ -7,7 +7,8 @@ export default function Header() {
       {/* Left most heading */}
       <h2 className="text-2xl font-raleway font-regular">
         <Link to="/" className="">
-          BMI Index Website
+          BMI Index Calculating Website
+          {/* When open in small devices its BMI  */}
         </Link>
       </h2>
 
